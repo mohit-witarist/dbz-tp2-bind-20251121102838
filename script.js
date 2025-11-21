@@ -96,5 +96,54 @@ window.addEventListener("resize", () => {
   }
 });
 
+// Theme toggle
+const themeToggleBtn = document.getElementById("theme-toggle");
+const prefersDark = window.matchMedia &&
+  window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+function applyTheme(theme) {
+  const body = document.body;
+  if (theme === "light") {
+    body.classList.add("theme-light");
+  } else {
+    body.classList.remove("theme-light");
+  }
+}
+
+function getStoredTheme() {
+  try {
+    return localStorage.getItem("dbz-tp2-theme");
+  } catch {
+    return null;
+  }
+}
+
+function storeTheme(theme) {
+  try {
+    localStorage.setItem("dbz-tp2-theme", theme);
+  } catch {
+    // ignore
+  }
+}
+
+// Initialize theme on load
+(function initTheme() {
+  const stored = getStoredTheme();
+  if (stored === "light" || stored === "dark") {
+    applyTheme(stored);
+  } else {
+    applyTheme(prefersDark ? "dark" : "light");
+  }
+})();
+
+if (themeToggleBtn) {
+  themeToggleBtn.addEventListener("click", () => {
+    const isLight = document.body.classList.contains("theme-light");
+    const nextTheme = isLight ? "dark" : "light";
+    applyTheme(nextTheme);
+    storeTheme(nextTheme);
+  });
+}
+
 // Initial states
 updateKiBar();
