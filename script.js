@@ -34,11 +34,7 @@ function updateKiBar() {
   kiBar.style.width = `${progress}%`;
 }
 
-// Scroll reveal
-document.querySelectorAll(".reveal-on-scroll").forEach((el) => {
-  revealEls.push(el);
-});
-
+// Scroll reveal observer
 const revealObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
@@ -49,11 +45,15 @@ const revealObserver = new IntersectionObserver(
     });
   },
   {
-    threshold: 0.2,
+    threshold: 0.15,
   }
 );
 
-revealEls.forEach((el) => revealObserver.observe(el));
+function initReveal() {
+  document.querySelectorAll(".reveal-on-scroll").forEach((el) => {
+    revealObserver.observe(el);
+  });
+}
 
 // Subtle hero scaling on scroll
 const hero = document.getElementById("hero");
@@ -109,7 +109,7 @@ function applyStoredTheme() {
       body.classList.remove("theme-light");
     }
   } catch {
-    // ignore storage errors (private mode, etc.)
+    // ignore
   }
 }
 
@@ -122,11 +122,11 @@ function toggleTheme() {
   }
 }
 
+// Initial setup
 applyStoredTheme();
+initReveal();
+updateKiBar();
 
 if (themeToggle) {
   themeToggle.addEventListener("click", toggleTheme);
 }
-
-// Initial states
-updateKiBar();
