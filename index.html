@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tournament of Power 2 • Dragon Multiverse</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Enter the Tournament of Power 2 – where universes clash, teams rise, and only imagination limits your power."
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="background-grid"></div>
+  <div id="scroll-ki-bar">
+    <div class="ki-fill"></div>
+  </div>
+
+  <header class="site-header">
+    <div class="logo">
+      <div class="logo-orb"></div>
+      <span class="logo-text">Tournament of Power II</span>
+    </div>
+    <nav class="nav-links">
+      <a href="#universes">Universes</a>
+      <a href="#universe7">Universe 7</a>
+      <a href="#stages">Arenas</a>
+      <a href="#rules">Rules</a>
+      <a href="#register" class="nav-cta">Join the Fight</a>
+    </nav>
+    <div class="header-actions">
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+        <span class="theme-icon theme-icon-sun">☀</span>
+        <span class="theme-icon theme-icon-moon">☾</span>
+      </button>
+      <button id="menu-toggle" class="menu-toggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div id="mobile-menu" class="mobile-menu">
+    <a href="#universes">Universes</a>
+    <a href="#universe7">Universe 7</a>
+    <a href="#stages">Arenas</a>
+    <a href="#rules">Rules</a>
+    <a href="#register" class="nav-cta">Join the Fight</a>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="hero-bg-layer hero-bg-stars" data-depth="0.05"></div>
+      <div class="hero-bg-layer hero-bg-planets" data-depth="0.12"></div>
+      <div class="hero-bg-layer hero-bg-auras" data-depth="0.2"></div>
+      <div class="hero-energy-ring" data-depth="0.3"></div>
+      <div class="hero-orb hero-orb-left" data-depth="0.25"></div>
+      <div class="hero-orb hero-orb-right" data-depth="0.28"></div>
+
+      <div class="hero-content">
+        <div class="hero-text">
+          <p class="hero-kicker">Multiverse Event • Fan Concept</p>
+          <h1>
+            Tournament of Power
+            <span class="hero-title-accent">II</span>
+          </h1>
+          <p class="hero-subtitle">
+            Twelve universes. Infinite timelines. One stage beyond gods.
+            Assemble your team and rewrite destiny in the greatest battle
+            ever imagined.
+          </p>
+          <div class="hero-actions">
+            <a href="#register" class="btn primary">Forge Your Universe Team</a>
+            <a href="#universes" class="btn ghost">View Multiverse Lineup</a>
+          </div>
+          <div class="hero-meta">
+            <div>
+              <span class="meta-label">Universes</span>
+              <span class="meta-value">12+</span>
+            </div>
+            <div>
+              <span class="meta-label">Fighters per Team</span>
+              <span class="meta-value">10</span>
+            </div>
+            <div>
+              <span class="meta-label">Arena Style</span>
+              <span class="meta-value">Evolving</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-silhouette" data-depth="0.22">
+            <div class="silhouette-aura"></div>
+            <div class="silhouette-body"></div>
+          </div>
+          <div class="hero-ki-particle ki-1" data-depth="0.3"></div>
+          <div class="hero-ki-particle ki-2" data-depth="0.35"></div>
+          <div class="hero-ki-particle ki-3" data-depth="0.4"></div>
+        </div>
+      </div>
+
+      <div class="hero-scroll-hint">
+        <span>Scroll to unlock universes</span>
+        <div class="scroll-icon"></div>
+      </div>
+    </section>
+
+    <!-- UNIVERSES GRID -->
+    <section id="universes" class="section universes-section">
+      <div class="section-header">
+        <p class="section-kicker">Multiverse Roster</p>
+        <h2>Universes on the Brink</h2>
+        <p class="section-subtitle">
+          Each universe forges a unique strategy, style and synergy. Imagine
+          your own team and bend the rules of power scaling.
+        </p>
+      </div>
+
+      <div class="universes-grid">
+        <!-- Universe 7 -->
+        <article class="universe-card reveal-on-scroll">
+          <div class="universe-header">
+            <span class="universe-id">Universe 7</span>
+            <span class="universe-role">Defiant Mortals</span>
+          </div>
+          <h3>Limit Break Vanguard</h3>
+          <p class="universe-desc">
+            A squad built on stubborn willpower, last‑second transformations
+            and reckless heroism. Their ki spikes when hope seems lost.
+          </p>
+          <ul class="universe-tags">
+            <li>Ultra Instinct Goku</li>
+            <li>SSBE Vegeta</li>
+            <li>Android 17 & 18</li>
+          </ul>
+          <div class="universe-footer">
+            <span class="power-label">Synergy Rating</span>
+            <div class="power-bar">
+              <div style="width: 94%;"></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Universe 11 -->
+        <article class="universe-card reveal-on-scroll delay-1">
+          <div class="universe-header">
+            <span class="universe-id">Universe 11</span>
+            <span class="universe-role">Pride Enforcers</span>
+          </div>
+          <h3>Cosmic Justice Legion</h3>
+          <p class="universe-desc">
+            Discipline, precision and overwhelming presence. Their aura alone
+            can crush weaker wills before the first strike.
+          </p>
+          <ul class="universe-tags">
+            <li>Jiren</li>
+            <li>Toppo</li>
+            <li>Dyspo</li>
+          </ul>
+          <div class="universe-footer">
+            <span class="power-label">Synergy Rating</span>
+            <div class="power-bar">
+              <div style="width: 92%;"></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Custom universe -->
+        <article class="universe-card reveal-on-scroll delay-2">
+          <div class="universe-header">
+            <span class="universe-id">Universe X</span>
+            <span class="universe-role">Anomaly Squad</span>
+          </div>
+          <h3>Timeline Breakers</h3>
+          <p class="universe-desc">
+            Fighters stolen from erased timelines and alternate futures, each
+            wielding contradictions in causality as weapons.
+          </p>
+          <ul class="universe-tags">
+            <li>Chrono Berserker</li>
+            <li>Paradox Assassin</li>
+            <li>Future Guardian</li>
+          </ul>
+          <div class="universe-footer">
+            <span class="power-label">Synergy Rating</span>
+            <div class="power-bar">
+              <div style="width: 95%;"></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Another custom universe -->
+        <article class="universe-card reveal-on-scroll delay-3">
+          <div class="universe-header">
+            <span class="universe-id">Universe Ω</span>
+            <span class="universe-role">Forbidden Realm</span>
+          </div>
+          <h3>Dragon Covenant</h3>
+          <p class="universe-desc">
+            A pact between mortals and ancient dragon entities. Their fighters
+            channel wish‑born abilities that defy logic.
+          </p>
+          <ul class="universe-tags">
+            <li>Dragon Aspect Monk</li>
+            <li>Wishbound Knight</li>
+            <li>Eternal Flame Arcanist</li>
+          </ul>
+          <div class="universe-footer">
+            <span class="power-label">Synergy Rating</span>
+            <div class="power-bar">
+              <div style="width: 90%;"></div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- UNIVERSE 7 DETAIL SECTION -->
+    <section id="universe7" class="section universe7-section">
+      <div class="universe7-header">
+        <div>
+          <p class="section-kicker">Universe 7 Squad</p>
+          <h2>Limit Break Vanguard – Team Overview</h2>
+          <p class="section-subtitle">
+            The canon Universe 7 lineup that survived erasure. Saiyans, androids and gods of destruction–level mortals standing on one fragile stage.
+          </p>
+        </div>
+        <div class="universe7-badge">
+          <span class="badge-label">Universe 7</span>
+          <span class="badge-meta">Canon Team • Tournament of Power</span>
+        </div>
+      </div>
+
+      <div class="universe7-layout">
+        <div class="universe7-summary reveal-on-scroll">
+          <div class="summary-card">
+            <h3>Team Identity</h3>
+            <p>
+              Universe 7 mixes reckless offense, ironclad clutch plays and unlikely teamwork.
+              Their greatest weapon isn’t raw power alone, but how wildly different fighters sync under pressure.
+            </p>
+            <ul class="summary-list">
+              <li><span>Late‑Game Scaling</span><span>★★★★★</span></li>
+              <li><span>Team Synergy</span><span>★★★★☆</span></li>
+              <li><span>Raw Destructive Power</span><span>★★★★★</span></li>
+              <li><span>Defense & Stamina</span><span>★★★★☆</span></li>
+            </ul>
+          </div>
+
+          <div class="summary-stat-line">
+            <div class="summary-pill">
+              <span class="pill-label">Anchor Fighter</span>
+              <span class="pill-value">Son Goku (Ultra Instinct)</span>
+            </div>
+            <div class="summary-pill">
+              <span class="pill-label">Battle Tempo</span>
+              <span class="pill-value">Explosive Counter‑Offense</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="universe7-fighters">
+          <div class="fighters-header">
+            <h3>Canon Fighters – Tournament of Power</h3>
+            <p>The full Universe 7 roster with their battlefield roles and signature contributions to survival.</p>
+          </div>
+
+          <ol class="fighters-list">
+            <li class="fighter-card reveal-on-scroll fighter-delay-1">
+              <div class="fighter-ki-pill ki-type-offense">Anchor • Offense</div>
+              <div class="fighter-main">
+                <div class="fighter-name-role">
+                  <h4>Son Goku</h4>
+                  <span class="fighter-epithet">Ultra Instinct Challenger</span>
+                </div>
+                <p class="fighter-desc">
+                  The heart of Universe 7. Pushes past limits mid‑battle, evolving from Super Saiyan Blue
+                  to Ultra Instinct under crushing pressure from Jiren and the multiverse itself.
+                </p>
+              </div>
+              <div class="fighter-meta">
+                <span class="fighter-tag">Ultra Instinct</span>
+                <span class="fighter-tag">Transforming Anchor</span>
+              </div>
+            </li>
+
+            <li class="fighter-card reveal-on-scroll fighter-delay-2">
+              <div class="fighter-ki-pill ki-type-offense">Co‑Anchor • Offense</div>
+              <div class="fighter-main">
+                <div class="fighter-name-role">
+                  <h4>Vegeta</h4>
+                  <span class="fighter-epithet">Pride of the Saiyans</span>
+                </div>
+                <p class="fighter-desc">
+                  Achieves Super Saiyan Blue Evolved through sheer pride and resolve. Specializes in
+                  single‑target pressure and last‑stand detonations that shatter enemy defenses.
+                </p>
+              </div>
+              <div class="fighter-meta">
+                <span class="fighter-tag">SSBE Power</span>
+                <span class="fighter-tag">Relentless Duelist</span>
+              </div>
+            </li>
+
+            <li class="fighter-card reveal-on-scroll fighter-delay-3">
+              <div class="fighter-ki-pill ki-type-duo">Support • Stamina</div>
+              <div class="fighter-main">
+                <div class="fighter-name-role">
+                  <h4>Android 17</h4>
+                  <span class="fighter-epithet">Infinite Energy Ranger</span>
+                </div>
+                <p class="fighter-desc">
+                  Endless stamina and tactical barriers. Plays the long game, saving allies with shields
+                  and outlasting entire universes to secure the final wish.
+                </p>
+              </div>
+              <div class="fighter-meta">
+                <span class="fighter-tag">Energy Barriers</span>
+                <span class="fighter-tag">MVP Survivor</span>
+              </div>
+            </li>
+
+            <li class="fighter-card reveal-on-scroll fighter-delay-4">
+              <div class="fighter-ki-pill ki-type-duo">Duo • Synergy</div>
+              <div class="fighter-main">
+                <div class="fighter-name-role">
+                  <h4>Android 18</h4>
+                  <span class="fighter-epithet">Calculated Striker</span>
+                </div>
+                <p class="fighter-desc">
+                  Combines precision attacks with 17’s endless energy. Targets weak points, punishing
+                  carelessness and setting up coordinated ring‑outs.
+                </p>
+              </div>
+              <div class="fighter-meta">
+                <span class="fighter-tag">Tag‑Team Tactics</span>
+                <span class="fighter-tag">Resource Control</span>
+              </div>
+            </li>
+
+            <li class="fighter-card reveal-on-scroll fighter-delay-5">
+              <div class="fighter-ki-pill ki-type-control">Control • Ki</div>
+              <div class="fighter-main">
+                <div class="fighter-name-role">
+                  <h4>Frieza</h4>
+                  <span class="fighter-epithet">Emperor of Cunning</span>
+                </div>
+                <p class="fighter-desc">
+                  Golden Frieza twists the battlefield through deception, ambushes and brutal finishing blows.
+                  A wild card who helps when it serves his own designs.
+                </p>
+              </div>
+              <div class="fighter-meta">
+                <span class="fighter-tag">Golden Form</span>
+                <span class="fighter-tag">Unstable Ally</span>
+              </div>
+            </li>
+
+            <li class="fighter-card reveal-on-scroll fighter-delay-6">
+              <div class="fighter-ki-pill ki-type-control">Control • Tactics</div>
+              <div class="fighter-main">
+                <div class="fighter-name-role">
+                  <h4>Piccolo</h4>
+                  <span class="fighter-epithet">Strategic Guardian</span>
+                </div>
+                <p class="fighter-desc">
+                  Reads enemy patterns and coordinates the mid‑tier fighters. Blends regeneration,
+                  long‑range blasts and battlefield awareness to guide Universe 7’s formations.
+                </p>
+              </div>
+              <div class="fighter-meta">
+                <span class="fighter-tag">Regeneration</span>
+                <span class="fighter-tag">Field Commander</span>
+              </div>
+            </li>
+
+            <li class="fighter-card reveal-on-scroll fighter-delay-7">
+              <div class="fighter-ki-pill ki-type-support">Support • Resolve</div>
+              <div class="fighter-main">
+                <div class="fighter-name-role">
+                  <h4>Son Gohan</h4>
+                  <span class="fighter-epithet">Ultimate Strategist</span>
+                </div>
+                <p class="fighter-desc">
+                  Fights as a balanced captain, pairing sharp tactics with Ultimate‑form bursts of power.
+                  Orchestrates team‑ups and sacrifices when the stakes peak.
+                </p>
+              </div>
+              <div class="fighter-meta">
+                <span class="fighter-tag">Ultimate Form</span>
+                <span class="fighter-tag">Team Captain</span>
+              </div>
+            </li>
+
+            <li class="fighter-card reveal-on-scroll fighter-delay-8">
+              <div class="fighter-ki-pill ki-type-support">Support • Utility</div>
+              <div class="fighter-main">
+                <div class="fighter-name-role">
+                  <h4>Krillin</h4>
+                  <span class="fighter-epithet">Destructo Disc Ace</span>
+                </div>
+                <p class="fighter-desc">
+                  Uses experience, ingenuity and tricky techniques like Solar Flare and Destructo Disc
+                  to create crucial openings far above his raw power level.
+                </p>
+              </div>
+              <div class="fighter-meta">
+                <span class="fighter-tag">Solar Flare</span>
+                <span class="fighter-tag">Clutch Support</span>
+              </div>
+            </li>
+
+            <li class="fighter-card reveal-on-scroll fighter-delay-9">
+              <div class="fighter-ki-pill ki-type-support">Support • Technique</div>
+              <div class="fighter-main">
+                <div class="fighter-name-role">
+                  <h4>Tenshinhan</h4>
+                  <span class="fighter-epithet">Multi‑Form Sentinel</span>
+                </div>
+                <p class="fighter-desc">
+                  Holds the line with multi‑form techniques and precise ki blasts. Sacrifices positioning
+                  to stop ambushes and protect weaker allies from sudden ring‑outs.
+                </p>
+              </div>
+              <div class="fighter-meta">
+                <span class="fighter-tag">Multi‑Form</span>
+                <span class="fighter-tag">Area Denial</span>
+              </div>
+            </li>
+
+            <li class="fighter-card reveal-on-scroll fighter-delay-10">
+              <div class="fighter-ki-pill ki-type-support">Specialist • Technique</div>
+              <div class="fighter-main">
+                <div class="fighter-name-role">
+                  <h4>Master Roshi</h4>
+                  <span class="fighter-epithet">Veteran of a Thousand Duels</span>
+                </div>
+                <p class="fighter-desc">
+                  Compensates for lower ki with pure skill, experience and hypnosis tricks. Eliminates
+                  multiple foes through reading intent rather than brute force.
+                </p>
+              </div>
+              <div class="fighter-meta">
+                <span class="fighter-tag">Kamehameha Master</span>
+                <span class="fighter-tag">Technique Expert</span>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ARENA / STAGES -->
+    <section id="stages" class="section stages-section">
+      <div class="section-header">
+        <p class="section-kicker">Battlefield</p>
+        <h2>Evolving Arenas of the Void</h2>
+        <p class="section-subtitle">
+          The stage responds to your ki. As universes clash, the arena fractures,
+          rotates and reforms — forcing constant adaptation.
+        </p>
+      </div>
+
+      <div class="stages-layout">
+        <div class="stage-visual reveal-on-scroll">
+          <div class="stage-orbit stage-orbit-outer"></div>
+          <div class="stage-orbit stage-orbit-mid"></div>
+          <div class="stage-orbit stage-orbit-inner"></div>
+          <div class="stage-core">
+            <span>Core</span>
+            <span class="core-sub">Zero Gravity Nexus</span>
+          </div>
+          <div class="stage-fragment frag-1"></div>
+          <div class="stage-fragment frag-2"></div>
+          <div class="stage-fragment frag-3"></div>
+          <div class="stage-fragment frag-4"></div>
+        </div>
+        <div class="stage-details reveal-on-scroll delay-1">
+          <div class="stage-point">
+            <h3>Phase‑Shift Terrain</h3>
+            <p>
+              Platforms blink in and out with each massive ki clash. Predict the pattern
+              or send opponents into the void.
+            </p>
+          </div>
+          <div class="stage-point">
+            <h3>Dynamic Gravity Wells</h3>
+            <p>
+              Sudden spikes and drops in gravity pull fighters mid‑combo, rewarding
+              aerial control and instant adaptation.
+            </p>
+          </div>
+          <div class="stage-point">
+            <h3>Audience of the Omni</h3>
+            <p>
+              Celestial spectators influence the rules mid‑battle, granting buffs,
+              nerfs or wild win conditions at random.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RULES -->
+    <section id="rules" class="section rules-section">
+      <div class="section-header">
+        <p class="section-kicker">Cosmic Rulebook</p>
+        <h2>How the Tournament of Power II Works</h2>
+        <p class="section-subtitle">
+          Inspired by the original Tournament of Power but bent through the lens
+          of pure imagination. Redesign the meta your way.
+        </p>
+      </div>
+
+      <div class="rules-grid">
+        <div class="rule-card reveal-on-scroll">
+          <span class="rule-number">01</span>
+          <h3>Ten Warriors Per Universe</h3>
+          <p>
+            Build your squad with any archetype you can imagine: tacticians,
+            berserkers, healers, reality‑benders and more.
+          </p>
+        </div>
+        <div class="rule-card reveal-on-scroll delay-1">
+          <span class="rule-number">02</span>
+          <h3>No Weapons, Only Ki</h3>
+          <p>
+            Power comes from within. Channel martial arts, transformations and
+            spiritual techniques — no external tech allowed.
+          </p>
+        </div>
+        <div class="rule-card reveal-on-scroll delay-2">
+          <span class="rule-number">03</span>
+          <h3>Ring‑Outs, Knockouts, Time‑Breaks</h3>
+          <p>
+            Victory conditions are flexible. Create special rules for your custom
+            saga arcs and rematches.
+          </p>
+        </div>
+        <div class="rule-card reveal-on-scroll delay-3">
+          <span class="rule-number">04</span>
+          <h3>Erase or Elevate</h3>
+          <p>
+            Universes face erasure — or ascension. Decide alternate endings, wish
+            outcomes and multiverse resets.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- REGISTER / CTA -->
+    <section id="register" class="section register-section">
+      <div class="register-card reveal-on-scroll">
+        <div class="register-left">
+          <p class="section-kicker">Create Your Saga</p>
+          <h2>Assemble Your Tournament of Power II Team</h2>
+          <p class="section-subtitle">
+            Use this as your inspiration board. Draft your fighters, define their
+            transformations and write your own canon‑breaking arc.
+          </p>
+          <ul class="register-list">
+            <li>Design unique forms, auras and ki colors.</li>
+            <li>Give every warrior a signature move and weakness.</li>
+            <li>Decide rivalries, alliances and last‑stand moments.</li>
+          </ul>
+        </div>
+        <form class="register-form">
+          <label>
+            Universe Name
+            <input type="text" placeholder="e.g., Universe Nexus-13" />
+          </label>
+          <label>
+            Team Codename
+            <input type="text" placeholder="e.g., Temporal Vanguard" />
+          </label>
+          <label>
+            Signature Fighter
+            <input type="text" placeholder="e.g., Kaioflare, the Starbound Saiyan" />
+          </label>
+          <label>
+            Describe Your Tournament Arc
+            <textarea rows="4" placeholder="How does your Tournament of Power II story unfold?"></textarea>
+          </label>
+          <button type="button" class="btn primary full-width">
+            Lock In Your Universe
+          </button>
+          <p class="register-footnote">
+            This is a fan‑made concept page. Use it as a creative prompt for
+            stories, fan art or roleplay. Not affiliated with official Dragon Ball.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>Fan Concept • Dragon Multiverse Landing</span>
+    <span>Inspired by Dragon Ball Super’s Tournament of Power</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
